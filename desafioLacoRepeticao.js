@@ -18,21 +18,3 @@ for (let contador = 0; contador <= 100; contador++) {
 
 console.log("Total de numeros pares: ", totalNumerosPares)
 console.log("Total de numeros impares: ", totalNumerosImpares)
-
-
-
-//REPETICAO COM WHILE
-
-// while (numero <=100 ) {
-
-//     if (numero % 2 == 0) {
-//         totalNumerosPares++
-//     } else {
-//         totalNumerosImpares++
-//     }
-
-//     numero++;
-// }
-
-// console.log("Quantidade de números pares:", totalNumerosPares);
-// console.log("Quantidade de números ímpares:", totalNumerosImpares);
