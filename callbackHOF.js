@@ -1,4 +1,5 @@
-// HOF -> Higher-Order Function === função que recebe outra função como parametro
+// HOF -> Higher -Order Function === Função que recebe outra funcao como parametro
+
 
 function calcular(numero1, numero2, operacao) {
     return operacao(numero1, numero2)
@@ -12,5 +13,15 @@ function divisao(num1, num2) {
     return num1 / num2
 }
 
-const resultadoSoma = calcular(3, 8, soma)
-console.log(resultadoSoma)
+function multiplicacao(num1, num2) {
+    return num1 * num2
+}
+
+const resultadoSoma = calcular(3, 8, soma) // soma é um callback
+console.log('Resultado da soma:', resultadoSoma)
+
+const resultadoDivisao = calcular(32, 8, divisao) // divisao é um callback
+console.log('Resultado da divisão:', resultadoDivisao)
+
+const resultadoMultiplicacao = calcular(3, 7, multiplicacao) // multiplicacao é um callback
+console.log('Resultado da Multiplicação:', resultadoMultiplicacao)
